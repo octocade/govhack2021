@@ -1,0 +1,6 @@
+https://api.gov.au/swagger-ui/index.html?url=https://api.gov.au/github?path%3dabs~DataAPI.openapi.yaml#/Get_Data/GetData
+
+curl -X GET "https://api.data.abs.gov.au/data/JV/all?startPeriod=2020" -H "accept: application/vnd.sdmx.data+json"
+
+https://api.data.abs.gov.au/data/JV/all?startPeriod=2020
+	

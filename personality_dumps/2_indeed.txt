@@ -1,0 +1,106 @@
+# https://www.indeed.com/career-advice/finding-a-job/jobs-for-myers-briggs-personality-type
+# Clean
+
+ISTJ
+
+Management
+Administration
+Law enforcement
+Accounting
+
+ISFJ
+
+Education
+Healthcare
+Religious settings
+
+INFJ
+
+Religion
+Counseling
+Teaching
+Art
+
+INTJ
+
+Scientific fields
+Technical fields
+Computers
+Legal field
+
+ISTP
+
+Skilled trades
+Technical fields
+Agriculture
+Law enforcement
+Military
+
+ISFP
+
+Healthcare
+Business
+Law enforcement
+
+INFP
+
+Counseling
+Writing
+Arts
+
+INTP
+
+Scientific fields
+Technical fields
+
+ESTP
+
+Marketing
+Skilled trades
+Business
+Law enforcement
+Applied technology
+ESFP
+
+Healthcare
+Teaching
+Coaching
+Skilled trades
+Childcare provider
+ENFP
+
+Counseling
+Teaching
+Religion
+Arts
+
+ENTP
+
+Science
+Management
+Technology
+Arts
+
+ESTJ
+
+Management
+Administration
+Law enforcement
+
+ESFJ
+
+Education
+Healthcare
+Religion
+
+ENFJ
+
+Religion
+Arts
+Teaching
+
+ENTJ
+
+Management
+Leadership
+

@@ -1,0 +1,13 @@
+secret_keys.txt
+token_dump
+channel_data_corpus
+
+frontend/node_modules
+frontend/.idea
+backend/__pycache__
+backend/enwiki_dbow
+backend/enwiki-latest-pages-articles.xml.bz2
+backend/venv
+.DS_Store
+
+**/.DS_Store

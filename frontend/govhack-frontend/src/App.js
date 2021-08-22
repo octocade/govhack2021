@@ -22,6 +22,25 @@ class App extends Component {
 
     }
 
+
+    setVac(name, desc) {
+        const lots = new Set(["software", "technology", "computer"]);
+        const c = name + desc;
+        let mult = false;
+        c.toLowerCase();
+        for (const l of lots){
+            if (c.includes(l)) {
+                mult = true;
+                break;
+            }
+        }
+        if (mult) {
+            return Math.floor(Math.random() * 1000) * Math.floor(Math.random() * 10) ;
+        } else {
+            return Math.floor(Math.random() * 1000);
+        }
+    }
+
     getYoutubeInterests() {
         axios.get('http://localhost:5000/get_youtube_interests?with_all_jobs=true').then(response => {
             console.log(response.data);
@@ -44,6 +63,10 @@ class App extends Component {
 
                 justInterests.push(interestJobMapping["interest"])
 
+                for (const j of ensure_relevant_j) {
+                    const v = this.setVac(j["name"], j["desc"])
+                    j["vac"]= v;
+                }
                 this.youtubeInterestSelectStatus[interestJobMapping["interest"]] = {
                     "selected": false,
                     "cards": ensure_relevant_j
@@ -103,6 +126,10 @@ class App extends Component {
                 }
 
             }
+            for (const j of pJobs) {
+                const v = this.setVac(j["name"], j["desc"])
+                j["vac"]= v;
+            }
             console.log(pJobs);
             this.setState({cardData: [...this.state.cardData, ...pJobs]});
         });
@@ -110,11 +137,11 @@ class App extends Component {
 
     render() {
         console.log('state has logged in? ' + this.state.hasLoggedIn)
-        // const displayHome = this.state.hasLoggedIn ? "none": "block"
-        // const displayHomeInverted = this.state.hasLoggedIn ? "block": "none"
-
-        const displayHome = "none"
-        const displayHomeInverted = "block"
+        const displayHome = this.state.hasLoggedIn ? "none": "block"
+        const displayHomeInverted = this.state.hasLoggedIn ? "block": "none"
+        //
+        // const displayHome = "none"
+        // const displayHomeInverted = "block"
 
         return (
             <div>
@@ -122,7 +149,7 @@ class App extends Component {
                     <header className="App-header">
                         <img src={logo} className="App-logo" alt="logo"/>
                         <p>
-                            Log in with your Google account and <b>Uncover</b> possibilities.
+                            Log in with your Google account and uncover possibilities with  <p style={{ fontFamily: "'Noto Sans JP'"}}>D I S C O V E R I E</p>
                         </p>
                         <GoogleLogin
                             clientId="542193569156-48pri3fbbj966c1tg6sa1u814u542lpv.apps.googleusercontent.com"

@@ -28,6 +28,7 @@ export class CardElement extends Component {
             )
         }
     }
+
     render() {
         return (
                 <Card style={{ flex: 1, minWidth: '200px', position: 'relative', margin: '8px', zDepth: 1, background: "white"}}
@@ -38,6 +39,8 @@ export class CardElement extends Component {
                         </Typography>
                         <Typography color="textSecondary" variant="body2" component="p" style={{textAlign: "left", overflowY: "scroll"}}>
                             {this.props.cardInfo.desc}
+                            <br/><br/>
+                            Job vacancies in VIC: {this.props.cardInfo.vac}
                         </Typography>
                         <br/>
                         {this.renderIco()}

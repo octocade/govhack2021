@@ -1,0 +1,29 @@
+<structure:Dataflow id="JV" agencyID="ABS" version="1.0.0" isFinal="true">
+          <common:Annotations>
+            <common:Annotation>
+              <common:AnnotationType>NonProductionDataflow</common:AnnotationType>
+              <common:AnnotationText xml:lang="en">true</common:AnnotationText>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationTitle>TIME_PERIOD</common:AnnotationTitle>
+              <common:AnnotationType>LAYOUT_COLUMN</common:AnnotationType>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationTitle>SECTOR</common:AnnotationTitle>
+              <common:AnnotationType>LAYOUT_ROW</common:AnnotationType>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationTitle>TSEST</common:AnnotationTitle>
+              <common:AnnotationType>LAYOUT_ROW_SECTION</common:AnnotationType>
+            </common:Annotation>
+            <common:Annotation>
+              <common:AnnotationTitle>MEASURE=M1,INDUSTRY=TOT,REGION=AUS,FREQ=Q,LASTNOBSERVATIONS=2</common:AnnotationTitle>
+              <common:AnnotationType>DEFAULT</common:AnnotationType>
+            </common:Annotation>
+          </common:Annotations>
+          <common:Name xml:lang="en">Job Vacancies</common:Name>
+          <structure:Structure>
+            <Ref id="JV" version="1.0.0" agencyID="ABS" package="datastructure" class="DataStructure" />
+          </structure:Structure>
+        </structure:Dataflow>
+        <structure:Dataflow id="LCI" agencyID="ABS" version="1.0.0" isFinal="true">
